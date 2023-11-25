@@ -1,10 +1,9 @@
+import Random from "./pages/Random";
 
-import './App.css';
 
 function App() {
   return (
-    <>
-    </>
+    <Random />
   );
 }
 
