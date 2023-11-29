@@ -1,0 +1,28 @@
+.heightwidth {
+    height: 100vh;
+    width: 100vw;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction {
+    flex-direction: row;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+.hewi{
+    width: 30%;
+    height: 100vh;
+}
+.bg-color{
+    background-color: black;
+    
+}

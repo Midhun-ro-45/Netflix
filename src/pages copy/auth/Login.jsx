@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from "../../components/button/Button";
 import Heading from "../../components/heading/Heading";
 import Input from "../../components/input/Input";
+import "./login.css"
 
 const LoginForm = () => {
   const [mailId, setMailId] = useState('');
@@ -30,7 +31,7 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
+    <div className='flex flex-direction justify-content align-items bg-color hewi'>
       <Heading content={"Login to Netflix"}>Login to Netflix</Heading>
       <form>
         <Input
@@ -38,14 +39,15 @@ const LoginForm = () => {
           placeholder="mailId"
           value={mailId}
           onChange={(e) => setMailId(e.target.value)}
-        />
+        /><br/>
         <Input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button onClick={handleLogin} content={"login"}>Login</Button>
+        <br />
+        <Button onClick={handleLogin} content={"login"} >Login</Button><br />
          <Button onClick={handleRegister} content={"register"}>Register</Button>
       </form>
     </div>
