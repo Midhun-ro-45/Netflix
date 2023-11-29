@@ -1,0 +1,31 @@
+.heightwidth{
+    height: 100vh;
+    width: 100vw;
+}
+.flex{
+    display: flex;
+}
+.flex-direction{
+    flex-direction: column;
+}
+.justify-content{
+    justify-content: center;
+}
+.align-items{
+    align-items: center;
+}
+.bg-img{
+    background-image: url("../../assets/images/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.hw{
+    height: 80vh;
+    width: 100vw;
+    
+}
+#lang{
+    margin-top: -550px;
+    margin-left: 600px;
+    position: absolute;
+}
