@@ -1,9 +1,10 @@
-import Random from "./pages/Random";
-
+import LoginForm from "./pages copy/auth/Login";
 
 function App() {
   return (
-    <Random />
+    <>
+      <LoginForm />
+    </>
   );
 }
 
