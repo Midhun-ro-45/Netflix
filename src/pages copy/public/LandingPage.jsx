@@ -10,7 +10,7 @@ const LandingPage = () => {
  <div>
        <div>
         <select name="language" id="lang">
-          <option value="en-in"></option>
+          <option value=""></option>
           <option value="">English</option>
           <option value="">Hindi</option>
           <option value="">Tamil</option>
