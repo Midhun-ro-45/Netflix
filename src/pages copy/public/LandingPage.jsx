@@ -15,7 +15,7 @@ const LandingPage = () => {
           <option value="">Hindi</option>
           <option value="">Tamil</option>
         </select>
-        <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."}/></div>
+        <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontfamily={""} fontweight={"800"}/></div>
         <div><Heading content={"Endless entertainment starts at just ₹ 149. Cancel anytime."}/></div>
         <div><Heading content={"Ready to watch? Enter your email to create or restart your membership."}/></div>
        <div>
