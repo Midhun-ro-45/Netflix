@@ -28,7 +28,7 @@ const LandingPage = () => {
                 <option value="">Tamil</option>
               </select>
 
-              <Button content={"sign in"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"5px"} />
+              <Button content={"sign in"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="10px 10px" borderRadius={"8px"} fontSize={"10px"} fontWeight={""} />
 
             </div>
 
