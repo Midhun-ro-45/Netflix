@@ -1,9 +1,19 @@
 import "./Button.css"
 
-function Button({ content, svg, onClick, borderRadius, padding, fontSize, border = "none", color, backgroundColor, size = "fontsize", handleclick, fontfamily = "inherit", outline = "outline" }) {
-  console.log(padding);
+function Button({ content,
+  svg,
+  borderRadius,
+  padding,
+  backgroundColor,
+  color,
+  fontSize,
+  fontWeight,
+  onclick
+}) {
+
+
   return (
-    <button style={{ padding, borderRadius, fontSize, backgroundColor, color, border }} onClick={handleclick} className={`${color} ${backgroundColor} ${fontfamily} ${size} ${outline}`} >{content}</button>
+    <button onClick={onclick} style={{ fontWeight, padding, borderRadius, fontSize, backgroundColor, color, }}  >{content}</button>
 
   )
 }
