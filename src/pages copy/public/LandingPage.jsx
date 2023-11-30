@@ -7,49 +7,98 @@ import "./landingpage.css"
 
 const LandingPage = () => {
   return (
- <>
- <div className=''>
-       <div className='heightwidth flex flex-direction justify-content align-items bg-img' >
-        <div id="lang">
-          <select name="language" className="lang">
-          <option value=""></option>
-          <option value="">English</option>
-          <option value="">Hindi</option>
-          <option value="">Tamil</option>
-        </select>
-        <Button content={"sign up"}/>
-        </div>
-        <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontfamily={""} fontweight={"800"}/></div>
-        <div><Heading content={"Endless entertainment starts at just ₹ 149. Cancel anytime."}/></div>
-        <div><Heading content={"Ready to watch? Enter your email to create or restart your membership."}/></div>
-       <div>
-         <Input placeholder={"email address"}/>
-        <Button content={"Get started"}/>
-       </div>
-    </div>
-    <div className='hw flex justify-content align-items '>
-        <MiniCard heading={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} />
-    </div>
-    <div className='hw flex justify-content align-items '>
-        <MiniCard heading={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} />
-    </div>
-     <div className='hw flex justify-content align-items '>
-        <MiniCard heading={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."}/>
-    </div>
-    <div className='hw flex justify-content align-items '>
-        <MiniCard heading={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."}/>
-    </div>
 
-    <div>
+    <div >
+
+      <div className='container1 ' >
+
+        <div className='layer flex flex-direction justify-content align-items'>
+
+          <div className='navbar'>
+
+            <div className='netflix-logo'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11rem" height="8rem" viewBox="0 0 300 81.387" id="netflix"><g fill="#b81d24"><path d="M256.09 76.212c4.178.405 8.354.84 12.52 1.29l9.198-22.712 8.743 24.807c4.486.562 8.97 1.152 13.44 1.768l-15.328-43.501L299.996 0H287.01l-.135.186-8.283 20.455L271.32.003h-12.822l13.237 37.565-15.644 38.644zM246.393 75.322V0h-12.817v74.265c4.275.33 8.552.684 12.817 1.056M150.113 71.11c3.46 0 6.916.026 10.366.054V43.492h15.397V31.708H160.48v-19.91h17.733V0h-30.6v71.12c.831 0 1.666-.013 2.5-.01M110.319 71.83c4.27-.152 8.544-.28 12.824-.384V11.8h11.98V.003H98.339V11.8h11.982v60.03h-.002zM12.295 79.772V34.897L27.471 77.96c4.667-.524 9.341-1.017 14.028-1.483V.001H29.201v46.483L12.825.001H0v81.384h.077c4.063-.562 8.14-1.096 12.218-1.613M85.98 11.797V.001H55.377V75.202a1100.584 1100.584 0 0 1 30.578-2.211V61.184c-5.916.344-11.82.74-17.71 1.181V43.497h15.397V31.706H68.245V11.797H85.98zM203.614 60.62V-.003h-12.873v71.876c10.24.376 20.44.9 30.606 1.56V61.619c-5.9-.381-11.81-.712-17.733-1"></path></g></svg>
+            </div>
+
+            <div>
+              <select name="language" id="lang">
+                <option value=""></option>
+                <option value="">English</option>
+                <option value="">Hindi</option>
+                <option value="">Tamil</option>
+              </select>
+
+              <Button content={"sign in"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"5px"} />
+
+            </div>
+
+          </div>
+
+          <Button content={"sign up"} />
+          <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontfamily={""} fontweight={"800"} /></div>
+          <div><Heading content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} /></div>
+          <div><Heading content={"Ready to watch? Enter your email to create or restart your membership."} /></div>
+          <div>
+            <Input placeholder={"email address"} borderRadius={"10px"} backgroundColor={"rgba(0,0,0,0.7"} color={"white"} padding={"1.5rem 1rem 0.5rem"} />
+            <Button content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"1.5rem"} />
+          </div>
+        </div>
+      </div>
+
+      <div className='flex justify-content align-items'>
+        <MiniCard Heading={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} />
+      </div>
+      <div className='flex justify-content align-items'>
+        <MiniCard Heading={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} />
+      </div>
+      <div className='flex justify-content align-items'>
+        <MiniCard Heading={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} />
+      </div>
+      <div className='flex justify-content align-items'>
+        <MiniCard Heading={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} />
+      </div>
+
+
       <p>Ready to watch? Enter your email to create or restart your membership.</p>
       <div>
-        <Input placeholder={"email address"}/>
-        <Button content={"get started"}/>
+        <div>
+          <select name="language" id="lang">
+            <option value=""></option>
+            <option value="">English</option>
+            <option value="">Hindi</option>
+            <option value="">Tamil</option>
+          </select>
+          <div><Heading color={"white"} content={"Laughter. Tears. Thrills. Find it all on Netflix."} size={"2rem"} fontweight={"800"} /></div>
+          <div><Heading color={"white"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} /></div>
+          <div><Heading color={"white"} content={"Ready to watch? Enter your email to create or restart your membership."} /></div>
+          <div>
+            <Input placeholder={"email address"} />
+            <Button content={"Get started"} padding={40} borderRadius={"10px"} />
+          </div>
+        </div>
+        <div>
+          <MiniCard Heading={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} />
+        </div>
+        <div>
+          <MiniCard Heading={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} />
+        </div>
+        <div>
+          <MiniCard Heading={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} />
+        </div>
+        <div>
+          <MiniCard Heading={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} />
+        </div>
+
+        <div>
+          <p>Ready to watch? Enter your email to create or restart your membership.</p>
+          <div>
+            <Input placeholder={"email address"} />
+            <Button content={"get started"} />
+          </div>
+        </div>
+
       </div>
     </div>
-
- </div>
- </>
 
   );
 };

@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Heading({content,size,color="white",fontfamily,fontweight}) {
+function Heading({ content, size, color = "white", fontfamily, fontweight }) {
   return (
-    <h1 style={{fontFamily:`${fontfamily}`,fontweight:`${fontfamily}`,color}}>{content}</h1>
+    <h1 style={{ fontFamily: `${fontfamily}`, fontweight: `${fontfamily}`, fontSize: `${size}`, color }}>{content}</h1>
   )
 }
 
