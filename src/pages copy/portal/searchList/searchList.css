@@ -1,0 +1,23 @@
+.searchpage-container {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.searchpage-input {
+    text-align: center;
+    position: relative;
+    top: 6rem;
+    margin-bottom: 10rem;
+}
+
+.searchpage-input button {
+    margin: 1rem;
+    margin-top: 3rem;
+}
+
+.search-content-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+}

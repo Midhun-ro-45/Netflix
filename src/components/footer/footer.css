@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction-column {
+    flex-direction: row;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+h4 {
+    color: white;
+}
+
+.bg-color-footer {
+    background-color: rgb(82, 78, 78);
+}
+
+.clr>a {
+    color: white;
+}
+
+.heightwidth {
+    height: 30vh;
+    /* width: 100vw; */
+}
+
+.space-between {
+    justify-content: space-around;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.text-align-center {
+    text-align: start;
+}
+
+div>a {
+    padding: 5px;
+}

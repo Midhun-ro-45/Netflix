@@ -1,9 +1,11 @@
 import React from 'react';
-import MiniCard from '../../components/cards/miniCard';
 import Heading from '../../components/heading/Heading';
 import Input from '../../components/input/Input';
 import Button from '../../components/button/Button';
+import MiniCard from '../../components/card/Minicard';
 import "./landingpage.css"
+import Footer from '../../components/footer/Footer';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -22,82 +24,58 @@ const LandingPage = () => {
 
             <div>
               <select name="language" id="lang">
-                <option value=""></option>
                 <option value="">English</option>
                 <option value="">Hindi</option>
                 <option value="">Tamil</option>
               </select>
+              <Link to={"/login"} >
+                <Button content={"sign in"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="5px 10px" borderRadius={"0.25rem"} fontSize={"1rem"} width={"5rem"} />
+              </Link>
 
-              <Button content={"sign in"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="10px 10px" borderRadius={"8px"} fontSize={"10px"} fontWeight={""} />
 
             </div>
 
           </div>
 
-          <Button content={"sign up"} />
-          <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontfamily={""} fontweight={"800"} /></div>
-          <div><Heading content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} /></div>
-          <div><Heading content={"Ready to watch? Enter your email to create or restart your membership."} /></div>
-          <div>
-            <Input placeholder={"email address"} borderRadius={"10px"} backgroundColor={"rgba(0,0,0,0.7"} color={"white"} padding={"1.5rem 1rem 0.5rem"} />
-            <Button content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"1.5rem"} />
+          <div className='landingpagecontent'>
+            <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontSize={"2.7rem"} fontweight={"800"} /></div>
+            <div><Heading fontSize={"1.5rem"} fontWeight={"400"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} /></div>
+            <div><Heading fontSize={"1.3rem"} fontweight={"400"} content={"Ready to watch? Enter your email to create or restart your membership."} /></div>
+            <div className='button-input'>
+              <Input width={"20rem"} height={"3.8rem"} placeholder={"email address"} borderRadius={"5px"} backgroundColor={"rgba(0,0,0,0.7"} color={"white"} padding={"1.5rem 1rem 0.5rem"} />
+              <Button height={"4rem"} content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"1.5rem"} />
+            </div>
           </div>
+
         </div>
       </div>
 
-      <div className='flex justify-content align-items'>
-        <MiniCard Heading={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} />
-      </div>
-      <div className='flex justify-content align-items'>
-        <MiniCard Heading={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} />
-      </div>
-      <div className='flex justify-content align-items'>
-        <MiniCard Heading={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} />
-      </div>
-      <div className='flex justify-content align-items'>
-        <MiniCard Heading={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} />
-      </div>
 
 
-      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <hr />
+      <MiniCard content={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"} />
+      <hr />
+      <MiniCard content={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} image={"https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"} />
+      <hr />
+      <MiniCard content={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"} />
+      <hr />
+      <MiniCard content={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"} />
+
+
+      <div className='bg-color-black last-text-container '>
+        <p className='text-center font-size last-text'>Ready to watch? Enter your email to create or restart your membership.</p><br />
+        <div className='flex justify-content gap'>
+          <Input placeholder={"Email address"} height={"38px"} />
+          <Button content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"3px"} fontSize={"15px"} />
+        </div><br />
+      </div>
       <div>
-        <div>
-          <select name="language" id="lang">
-            <option value=""></option>
-            <option value="">English</option>
-            <option value="">Hindi</option>
-            <option value="">Tamil</option>
-          </select>
-          <div><Heading color={"white"} content={"Laughter. Tears. Thrills. Find it all on Netflix."} size={"2rem"} fontweight={"800"} /></div>
-          <div><Heading color={"white"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} /></div>
-          <div><Heading color={"white"} content={"Ready to watch? Enter your email to create or restart your membership."} /></div>
-          <div>
-            <Input placeholder={"email address"} />
-            <Button content={"Get started"} padding={40} borderRadius={"10px"} />
-          </div>
-        </div>
-        <div>
-          <MiniCard Heading={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} />
-        </div>
-        <div>
-          <MiniCard Heading={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} />
-        </div>
-        <div>
-          <MiniCard Heading={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} />
-        </div>
-        <div>
-          <MiniCard Heading={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} />
-        </div>
-
-        <div>
-          <p>Ready to watch? Enter your email to create or restart your membership.</p>
-          <div>
-            <Input placeholder={"email address"} />
-            <Button content={"get started"} />
-          </div>
-        </div>
-
+        <Footer />
       </div>
+
+
+
+
     </div>
 
   );

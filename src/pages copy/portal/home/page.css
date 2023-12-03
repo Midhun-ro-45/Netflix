@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.homepage-container {
+    width: 100%;
+    height: 90vh;
+    border: 1px solid #000000;
+    position: relative;
+}
+
+.homepage-container image {
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+}
+
+.homepage-content {
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.homepage-buttons button {
+    margin-left: 1rem;
+}
+
+.cards-container {
+    background-color: black;
+    padding-left: 5rem;
+}

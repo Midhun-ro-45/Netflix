@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.heightwidth {
+    height: 100vh;
+    width: 100vw;
+}
 
 .flex {
     display: flex;
@@ -30,7 +34,7 @@
     height: 90%;
 }
 
-.bg-color-div {
+.bg-color {
     background: rgba(0, 0, 0, 0.8);
     /* opacity: 70%; */
 
@@ -39,12 +43,8 @@
 .bg-img-signin {
     background-image: url("../../assets/images/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     background-size: cover;
-}
 
-.shadow-layer {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+    /* background: rgba(0, 0, 0, 0.2); */
 }
 
 .helplink {
@@ -81,8 +81,8 @@ a:hover {
     margin-left: 10px;
 }
 
-.padding {
-    padding: 8px;
+.padding-signup {
+    padding: 50px;
 }
 
 .signup-content {
@@ -92,15 +92,15 @@ a:hover {
     justify-content: space-between;
 }
 
-.color-white {
+.colorwhite {
     color: white;
-    opacity: 0.5;
-    line-height: 32px;
 }
 
-.margin-left {
-    margin-left: -10px;
+a {
+    color: white;
 }
+
+
 
 .justify-self {
     align-self: flex-start;
@@ -113,7 +113,7 @@ a:hover {
 
 .signup-content>input {
     background-color: grey;
-    /* padding: 10px; */
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -122,31 +122,27 @@ input::placeholder {
     letter-spacing: 1px;
 }
 
-.foot-div {
-    width: 100%;
-    margin-top: 200px;
+.sign-up-butt {
+    margin-top: 20px;
+    margin-left: -7px;
 }
 
-.svg-netflix {
-    margin-left: -1000px;
+.svg-signup {
+    position: absolute;
+    margin-top: -500px;
+    margin-left: -980px;
 }
 
-.min-height {
-    min-height: 450px;
+.line-height {
+    line-height: 30px;
 }
 
-.signup-content>input {
-    margin-top: 15px;
+.shadow-signup-layer {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
 }
 
-.signup-content>button {
-    margin-top: 15px;
-
-}
-
-.foot-div>div {
-    margin-left: -10px;
-    margin-bottom: -10px;
+.signup-footer>div {
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
+
 }

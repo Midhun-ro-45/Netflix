@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mini {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 80vh;
+    width: 100vw;
+    color: white;
+    padding: 10%;
+    gap: 100px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.imageone {
+    /* background-color: white; */
+    width: 30%;
+    height: 90%;
+    /* background-image: url("../../assets/images/tv.png"); */
+    /* background-size: cover; */
+}
+
+.contentone {
+    width: 40%;
+}
+
+.para {
+    font-size: 20px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}

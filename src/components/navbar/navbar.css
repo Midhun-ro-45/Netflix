@@ -1,0 +1,42 @@
+.flex {
+    padding-top: 20px;
+    padding-bottom: 7px;
+
+    display: flex;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.flex>div {
+    padding-left: 10px;
+}
+
+.padding-left {
+    margin-left: 550px;
+}
+
+.bg-color {
+    background-color: yellow;
+}
+
+.img-smile {
+    height: 90%;
+    width: 38px;
+}
+
+.margin-top {
+    margin-top: -20px;
+}
+
+.border-none {
+    border: none;
+}
+
+.smiley-icon {
+    width: 3rem;
+    height: 3rem;
+}

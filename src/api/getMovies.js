@@ -6,7 +6,6 @@ import requests from "./../libs/request";
 export const getFetchActionMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchActionMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -16,7 +15,6 @@ export const getFetchActionMovies = async () => {
 export const getFetchAdventureMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchAdventureMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -26,7 +24,6 @@ export const getFetchAdventureMovies = async () => {
 export const getFetchTrending = async () => {
     try {
         const { data } = await axios.get(requests.fetchTrending);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -36,7 +33,6 @@ export const getFetchTrending = async () => {
 export const getFetchNetflixOriginals = async () => {
     try {
         const { data } = await axios.get(requests.fetchNetflixOriginals);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -46,7 +42,6 @@ export const getFetchNetflixOriginals = async () => {
 export const getFetchTopRated = async () => {
     try {
         const { data } = await axios.get(requests.fetchTopRated);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -56,7 +51,6 @@ export const getFetchTopRated = async () => {
 export const getFetchComedyMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchComedyMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -66,7 +60,6 @@ export const getFetchComedyMovies = async () => {
 export const getFetchDocumentaries = async () => {
     try {
         const { data } = await axios.get(requests.fetchDocumentaries);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -76,7 +69,6 @@ export const getFetchDocumentaries = async () => {
 export const getFetchHorrorMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchHorrorMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -86,7 +78,6 @@ export const getFetchHorrorMovies = async () => {
 export const getFetchScienceFictionMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchScienceFictionMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -96,7 +87,6 @@ export const getFetchScienceFictionMovies = async () => {
 export const getFetchWarMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchWarMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -106,7 +96,6 @@ export const getFetchWarMovies = async () => {
 export const getFetchSearchUrl = async () => {
     try {
         const { data } = await axios.get(requests.searchUrl);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
@@ -116,10 +105,77 @@ export const getFetchSearchUrl = async () => {
 export const getFetchRomanceMovies = async () => {
     try {
         const { data } = await axios.get(requests.fetchRomanceMovies);
-        console.log(data);
         return data;
     } catch (error) {
         alert(JSON.stringify(error));
         return null;
     }
+};
+
+export const getPageData = async () => {
+    const actionMovies = await getFetchActionMovies();
+    const fetchTrending = await getFetchTrending();
+    const netflixOriginals = await getFetchNetflixOriginals();
+    const adventureMovies = await getFetchAdventureMovies();
+    const comedyMovies = await getFetchComedyMovies();
+    const documentaries = await getFetchDocumentaries();
+    const horrorMovies = await getFetchHorrorMovies();
+    const romanceMovies = await getFetchRomanceMovies();
+    const scienceFictionMovies = await getFetchScienceFictionMovies();
+    const topRated = await getFetchTopRated();
+    const warMovies = await getFetchWarMovies();
+
+    return {
+        actionMovies,
+        fetchTrending,
+        netflixOriginals,
+        adventureMovies,
+        comedyMovies,
+        documentaries,
+        horrorMovies,
+        romanceMovies,
+        scienceFictionMovies,
+        topRated,
+        warMovies,
+    };
+};
+
+export const addToWishlist = async (media_id) => {
+    const options = {
+        headers: {
+            accept: "application/json",
+            "content-type": "application/json",
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OWEwODkyMzgwODZhZjQyZGNhYThkOGYwY2Y3Mjk1MCIsInN1YiI6IjY1NjVlNzQzM2Q3NDU0MDBjOWM0ZDc0YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-LyTJhsp3ayx3leEniBRwZGVYNiTcEJM2seiZPpXobI`,
+        },
+    };
+
+    const { data } = await axios.post(
+        `account/20765029/favorite`,
+        {
+            media_type: "movie",
+            media_id,
+            favorite: true,
+        },
+        options
+    );
+    return data;
+};
+
+
+export const getWishlist = async () => {
+
+
+    const options = {
+        headers: {
+            accept: "application/json",
+            Authorization:
+                `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5OWEwODkyMzgwODZhZjQyZGNhYThkOGYwY2Y3Mjk1MCIsInN1YiI6IjY1NjVlNzQzM2Q3NDU0MDBjOWM0ZDc0YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-LyTJhsp3ayx3leEniBRwZGVYNiTcEJM2seiZPpXobI`,
+        },
+    };
+
+    const response = await axios.get(
+        `account/20765029/favorite/movies?language=en-US&page=1&sort_by=created_at.asc`,
+        options
+    );
+    return response.data.results;
 };
