@@ -46,10 +46,10 @@ const Crasol = ({ data, size = 5, render }) => {
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="40"
-                            height="60"
+                            width="30"
+                            height="30"
                             fill="currentColor"
-                            className="bi bi-arrow-right-circle"
+                          
                             viewBox="0 0 16 16"
                         >
                             <path d="M2 8a.5.5 0 0 1 .5-.5h8.793l-2.647-2.646a.5.5 0 0 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L11.293 8.5H2.5A.5.5 0 0 1 2 8z" />
@@ -67,8 +67,8 @@ const Crasol = ({ data, size = 5, render }) => {
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="40"
-                            height="60"
+                            width="23"
+                            height="23"
                             fill="currentColor"
                             viewBox="0 0 16 16"
                         >
