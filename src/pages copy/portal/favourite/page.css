@@ -16,3 +16,15 @@ h1 {
     margin-left: 4rem;
 
 }
+.fav-container>button{
+    text-align: end;
+}
+.fav-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fav-home button{
+   margin-top: 20px;
+   margin-right: 10px;
+}
