@@ -44,16 +44,10 @@ const Crasol = ({ data, size = 5, render }) => {
                         disabled={currentPage === 1}
                         onClick={handlePrevious}
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="30"
-                            height="30"
-                            fill="currentColor"
-                          
-                            viewBox="0 0 16 16"
-                        >
-                            <path d="M2 8a.5.5 0 0 1 .5-.5h8.793l-2.647-2.646a.5.5 0 0 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L11.293 8.5H2.5A.5.5 0 0 1 2 8z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width={"23px"} height={"23px"} stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" /> 
+</svg>
+
                     </button>
                     <ul className="row-container">
                         {data?.slice(start, end)?.map((item) => (
