@@ -39,4 +39,11 @@ a {
 .smiley-icon {
     width: 3rem;
     height: 3rem;
+    scale: 1;
+}
+.nav>div:hover{
+    scale: 1.2;
+}
+.nav div link{
+    text-decoration: none;
 }
