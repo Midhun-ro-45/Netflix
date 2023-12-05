@@ -6,7 +6,7 @@
 
 .heightwidth {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .flex {
@@ -82,10 +82,11 @@ a:hover {
 }
 
 .padding-signup {
-    padding: 50px;
+    /* padding: 30px; */
 }
 
 .signup-content {
+    margin-top: -10px;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -111,20 +112,10 @@ a {
     opacity: 0.5;
 }
 
-.signup-content>input {
-    background-color: grey;
-    padding: 10px;
-    border-radius: 5px;
-}
 
 input::placeholder {
-    font-size: 15px;
+    /* font-size: 15px; */
     letter-spacing: 1px;
-}
-
-.sign-up-butt {
-    margin-top: 20px;
-    /* margin-left: -7px; */
 }
 
 .svg-signup {
@@ -146,18 +137,22 @@ input::placeholder {
     opacity: 0.9;
 
 }
-/* .sign-in-h1{
-    text-align: left;
-} */
+
 .inner-container{
     display: flex;
     flex-direction: column;
  
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));}
 .signup-content input{
-    margin-bottom: 20px;
-    height: 4rem;
+    padding-bottom: 10px;
+    color: black;
+    background-color: grey;
+        padding: 10px;
+        border-radius: 5px;
+       margin-bottom: 10px;
+    font-size: 20px;
     }
-    .inner-container>h1{
+.inner-container>h1{
         margin-left: 8px;
     }
+ 

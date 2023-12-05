@@ -48,7 +48,7 @@ const SignUpForm = () => {
                             placeholder="Email"
                             value={mailId}
                             onChange={(e) => setMailId(e.target.value)}
-                            height={"30%"}
+                            height={"20%"}
                             width={"98%"}
                         />
                         <Input
@@ -56,10 +56,10 @@ const SignUpForm = () => {
                             placeholder="Password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            height={"30%"}
+                            height={"20%"}
                             width={"98%"}
 
-                        />
+                        /><br/>
                         <div className='sign-up-butt'><Link to="/home"> <Button onClick={handleLogin} content={"Sign Up"} height={"3rem"} width={"97%"} borderRadius={"4px"} fontSize={"20px  "} backgroundColor={"rgb(229,9,20)"} color={"white"} ></Button></Link>
                         </div>
                         <div>
