@@ -11,7 +11,7 @@ const FavoriteListPage = () => {
     useEffect(() => {
         getWishlist().then((data) => SetMovies(data));
     }, []);
-    return <div className="fav-container">
+    return <div className="fav-cont">
        
        <div className="fav-home">
         <div> <h1 style={{ color: "white", fontWeight: "800" }}>My List</h1> </div><div><Link to={"/home"}><Button width={"50px"} height={"35px"} content={"Home"} backgroundColor={"red"} color={"white"} padding={"4px"} borderRadius={"5px"} fontSize={"15px"}/></Link></div>
