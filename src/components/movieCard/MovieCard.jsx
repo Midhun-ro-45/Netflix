@@ -38,7 +38,7 @@ const MovieCard = ({ movie }) => {
                         <div>
                             <h3>{movie.name || movie.title}</h3>
                         </div>
-                        <div>
+                        <div className="fav-buff">
                             <button
                                 className={`wishlist-button ${isWishlistSelected ? "wishlist-selected" : ""
                                     }`}

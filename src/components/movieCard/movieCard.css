@@ -6,7 +6,7 @@
     margin: 10px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8p+x rgba(0, 0, 0, 0.1);
 }
 
 .movie-image {
@@ -32,6 +32,11 @@
 
 .movie-card:hover .overlay {
     opacity: 1;
+   
+}
+.movie-card:hover{
+    scale: 1.1;
+    border: 5px solid rgb(207, 77, 77);
 }
 
 h3 {
@@ -46,8 +51,15 @@ h3 {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
+  
+   
+    
 }
+
 
 .wishlist-selected {
     color: red;
+}
+.fav-buff>button{
+   margin-right: 20px;
 }
