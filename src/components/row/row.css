@@ -1,4 +1,18 @@
-.row-h2{
+.row-h2 {
     color: white;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
+
+@keyframes moveH2 {
+    0% {
+        transform: translateX(0);
+        /* Starting position */
+    }
+    
+
+    100% {
+        transform: translateX(100%);
+        /* Ending position */
+    }
+}
+
