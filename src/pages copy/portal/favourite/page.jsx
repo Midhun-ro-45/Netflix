@@ -15,9 +15,8 @@ const FavoriteListPage = () => {
        
        <div className="fav-home">
         <div> <h1 style={{ color: "white", fontWeight: "800" }}>My List</h1> </div><div><Link to={"/home"}><Button width={"50px"} height={"35px"} content={"Home"} backgroundColor={"red"} color={"white"} padding={"4px"} borderRadius={"5px"} fontSize={"15px"}/></Link></div>
-</div>
+       </div>
         <div className="favourite-movie-list">{movies?.map((movie) => <MovieCard key={movie.id} movie={movie} />)}</div>
-
     </div>;
 };
 export default FavoriteListPage
