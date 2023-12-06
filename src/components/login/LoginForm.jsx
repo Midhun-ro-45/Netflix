@@ -4,24 +4,34 @@ import Input from "../input/Input";
 import Footer from "../../components/footer/Footer";
 import { useState } from "react";
 import "./login.css";
+import { login } from "../../api/getMovies";
 const LoginScreen = () => {
-  const [mailId, setMailId] = useState("");
-  const [password, setPassword] = useState("");
+   const navigator = useNavigate();
 
-  const navigator = useNavigate();
-  const handleLogin = () => {
-    const storedData = JSON.parse(localStorage.getItem("userData"));
+  const initialState={
+    username:"",
+    password:""
+  }
+  const [user, setUser] = useState(initialState);
 
-    if (
-      storedData &&
-      mailId === storedData.mailId &&
-      password === storedData.password
-    ) {
-      console.log("Login successful!");
-    } else {
-      console.log("Invalid mailId or password");
-    }
-  };
+  const handleSubmit = async (event) => {
+		event.preventDefault();
+		// Perform form submission logic here
+		console.log("Form submitted:", user);
+		login(user);
+		const response = await login(user);
+		console.log({ response });
+		if (response) {
+			navigator("/home");
+		} else {
+			alert("invalis email and password");
+		}
+	};
+
+  const handleChange=(event)=>{
+    const {name,value} =event.target
+setUser({...user,[name]:value})
+  }
   return (
     <div className="loginScreen">
       <div className="grad_container">
@@ -32,30 +42,28 @@ const LoginScreen = () => {
           />
         </div>
         <div className="signinform">
-          <div className="container_signin">
+         <form onSubmit={handleSubmit}>
+           <div className="container_signin">
             <h1 className="head_signin">Sign In</h1>
 
             <Input
-              type="email"
+            name="username"
+              type="text"
               placeholder="Email or Phone number"
-             
                backgroundColor={"lightgrey"}
-              value={mailId}
-              onChange={(e) => setMailId(e.target.value)}
+              value={user.username}
+              onChange={handleChange}
             />
             <Input
               type="password"
               placeholder="Password"
-             
+             name="password"
               backgroundColor={"lightgrey"}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={user.password}
+              onChange={handleChange}
             />
-
-            <Link to="/home">
-              <Button content={"Sign In"} color={"white"} backgroundColor={"red"} width={"95%"} height={"3.5rem"} borderRadius={"8px"} onClick={handleLogin} />
-            </Link>
-
+              <Button content={"Sign In"} color={"white"} backgroundColor={"red"} width={"95%"} height={"3.5rem"} fontSize={"20px"} borderRadius={"8px"} />
+            
             <div className="middle">
               <div>
                 <Input type="checkbox" />
@@ -83,6 +91,7 @@ const LoginScreen = () => {
               </div>
             </div>
           </div>
+         </form>
         </div>
         <div className="foot_div">
           <Footer/>

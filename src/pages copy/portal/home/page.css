@@ -26,13 +26,57 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-left: 0px;
 }
 
-.homepage-buttons button {
-    margin-left: 1rem;
+.homepage-buttons >button {
+    margin-right: 1rem;
+    text-transform: capitalize;
+}
+
+.homepage-buttons button:hover{
+    scale:1.1;
+    outline:none;
 }
 
 .cards-container {
-    background-color: black;
+    background-color: rgb(15, 15, 15);
     padding-left: 5rem;
+    overflow: hidden;
+}
+.cards-container :nth-child(1):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+   
+}
+.cards-container :nth-child(2):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(3):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(4):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(5):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(6):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(7):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(8):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
+}
+.cards-container :nth-child(9):hover h2 {
+    animation: moveH2 3s ease-in-out infinite;
+
 }

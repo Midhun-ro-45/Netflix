@@ -80,11 +80,6 @@ a:hover {
 .marginleft-link {
     margin-left: 10px;
 }
-
-.padding-signup {
-    /* padding: 30px; */
-}
-
 .signup-content {
     margin-top: -10px;
     height: 50%;
@@ -100,13 +95,9 @@ a:hover {
 a {
     color: white;
 }
-
-
-
 .justify-self {
     align-self: flex-start;
 }
-
 .need-link {
     color: white;
     opacity: 0.5;

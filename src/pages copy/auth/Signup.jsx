@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import Button from "../../components/button/Button";
 import Heading from "../../components/heading/Heading";
 import Input from "../../components/input/Input";
-import "./signup.css"
 import Footer from '../../components/footer/Footer';
+
+import "./signup.css"
 
 
 const SignUpForm = () => {
@@ -19,7 +20,6 @@ const SignUpForm = () => {
 
     const handleLogin = () => {
         const storedData = JSON.parse(localStorage.getItem('userData'));
-
         if (storedData && mailId === storedData.mailId && password === storedData.password) {
             console.log('Login successful!');
         } else {
@@ -30,9 +30,7 @@ const SignUpForm = () => {
     const handleRegister = () => {
 
         const userData = { mailId, password };
-
         localStorage.setItem('userData', JSON.stringify(userData));
-
         console.log('Registration successful!');
     };
 

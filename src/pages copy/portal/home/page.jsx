@@ -51,24 +51,19 @@ const HomePage = () => {
         <>
             <div className="homepage-container">
                 <NavigationBar />
-
-
-
                 <img
                     src={`${baseUrl + movie?.backdrop_path}`}
                     alt="Poster"
                     className=" w-full h-full object-cover"
                     loading="lazy"
                 />
-
-
                 <div className="homepage-content">
 
-                    <h1 style={{ color: "white" }}>{movie?.name}</h1>
+                    <h1 style={{ color: "white",marginBottom:"-1rem",marginLeft:"0px" }}>{movie?.name}</h1>
 
                     <div className="homepage-buttons">
-                        <Button content={"play"} width={"8rem"} height={"3rem"} color={"black"} backgroundColor={"white"} fontWeight={'600'} />
-                        <Button color={"white"} content={"watch later"} width={"8rem"} height={"3rem"} backgroundColor={"inherit"} />
+                        <Button content={"play"} margin width={"8rem"} height={"3rem"} color={"black"} backgroundColor={"white"} fontWeight={'600'} fontSize={"15px"}/>
+                        <Button color={"white"} content={"watch later"} width={"8rem"} height={"3rem"} backgroundColor={"inherit"} fontSize={"15px"}/>
                     </div>
 
                     <p style={{ color: "white" }} >

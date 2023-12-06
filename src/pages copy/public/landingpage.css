@@ -1,6 +1,6 @@
 .container1 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("../../assets/images/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
     background-size: cover;
     background-blend-mode: darken;
@@ -19,7 +19,6 @@
 .navbar {
     width: 80%;
     min-height: 3rem;
-    /* background-color: brown; */
     position: absolute;
     top: 0px;
     display: flex;
@@ -37,11 +36,12 @@
 }
 
 .landingpagecontent {
-    height: 15rem;
+    height: 16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content:center; */
+    text-align: center;
 }
 
 .button-input {
@@ -50,7 +50,7 @@
     justify-content: space-around;
 }
 
-hr {
+.seperater {
     height: 10px;
     background-color: gray;
 }
@@ -64,4 +64,11 @@ hr {
 
 .last-text-container {
     background-color: black;
+    padding-bottom: 2rem;
+}
+.ending-int{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }

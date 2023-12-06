@@ -36,13 +36,15 @@ const LandingPage = () => {
             </div>
 
           </div>
-
+          {/* landingcontent */}
           <div className='landingpagecontent'>
-            <div><Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontSize={"2.7rem"} fontweight={"800"} /></div>
-            <div><Heading fontSize={"1.5rem"} fontWeight={"400"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} /></div>
-            <div><Heading fontSize={"1.3rem"} fontweight={"400"} content={"Ready to watch? Enter your email to create or restart your membership."} /></div>
+            <div className='landing-first-div'>
+          <Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontSize={"2.7rem"} fontweight={"800"} />
+          <Heading fontSize={"1.5rem"} fontWeight={"400"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} />
+          <Heading fontSize={"1.3rem"} fontweight={"400"} content={"Ready to watch? Enter your email to create or restart your membership."} />
+            </div>
             <div className='button-input'>
-              <Input width={"20rem"} height={"3.8rem"} placeholder={"email address"} borderRadius={"5px"} backgroundColor={"rgba(0,0,0,0.7"} color={"white"} padding={"1.5rem 1rem 0.5rem"} />
+              <Input width={"20rem"} height={"3.8rem"} placeholder={"Email address"} borderRadius={"5px"} backgroundColor={"rgba(0,0,0,0.7"} color={"white"} padding={"1.5rem 1rem 0.5rem"} />
               <Button height={"4rem"} content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"1.5rem"} />
             </div>
           </div>
@@ -52,22 +54,22 @@ const LandingPage = () => {
 
 
 
-      <hr />
+      <div className='seperater'></div>
       <MiniCard content={"Enjoy on your TV"} paragraph={"Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"} />
-      <hr />
+      <div className='seperater'></div>
       <MiniCard content={"Download your shows to watch offline"} paragraph={"Save your favourites easily and always have something to watch."} image={"https://occ-0-2484-3663.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"} />
-      <hr />
+      <div className='seperater'></div>
       <MiniCard content={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"} />
-      <hr />
+      <div className='seperater'></div>
       <MiniCard content={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"} />
 
 
-      <div className='bg-color-black last-text-container '>
-        <p className='text-center font-size last-text'>Ready to watch? Enter your email to create or restart your membership.</p><br />
-        <div className='flex justify-content gap'>
-          <Input placeholder={"Email address"} height={"38px"} />
-          <Button content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"3px"} fontSize={"15px"} />
-        </div><br />
+      <div className='last-text-container '>
+        <p className='last-text'>Ready to watch? Enter your email to create or restart your membership.</p><br />
+        <div className='ending-int'>
+          <Input placeholder={"Email address"} height={"38px"} width={"20%"} backgroundColor={"grey"} padding={"0px 10px 0px 10px"} borderRadius={"8px"}/>
+          <Button content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"15px"} />
+        </div>
       </div>
       <div>
         <Footer />
