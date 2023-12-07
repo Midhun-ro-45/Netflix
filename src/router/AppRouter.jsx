@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from '../pages copy/portal/home/page'
 import LandingPage from "../pages copy/public/LandingPage"
-import LoginForm from '../components/login/LoginForm'
+import LoginForm from "../pages copy/auth/LoginForm"
 import SignUpForm from '../pages copy/auth/Signup'
 import FavoriteListPage from '../pages copy/portal/favourite/page'
 import SearchList from "../pages copy/portal/searchList/SearchList"

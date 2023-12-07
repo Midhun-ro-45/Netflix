@@ -5,6 +5,7 @@ import NavigationBar from "../../../components/navbar/Navbar";
 import "./searchList.css"
 import Button from "../../../components/button/Button";
 import MovieCard from "../../../components/movieCard/MovieCard";
+import { getPageData } from "../../../api/getMovies";
 
 const SearchList = () => {
     const [search, setSearch] = useState("");
@@ -30,6 +31,8 @@ const SearchList = () => {
             getMovies(search).then((results) => {
                 setMovies(results);
             });
+        } else {
+            getPageData().then((response) => setMovies(response?.topRated?.results));
         }
     }, [search]);
 

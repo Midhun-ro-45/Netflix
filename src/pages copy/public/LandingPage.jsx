@@ -39,9 +39,9 @@ const LandingPage = () => {
           {/* landingcontent */}
           <div className='landingpagecontent'>
             <div className='landing-first-div'>
-          <Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontSize={"2.7rem"} fontweight={"800"} />
-          <Heading fontSize={"1.5rem"} fontWeight={"400"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} />
-          <Heading fontSize={"1.3rem"} fontweight={"400"} content={"Ready to watch? Enter your email to create or restart your membership."} />
+              <Heading content={"Laughter. Tears. Thrills. Find it all on Netflix."} fontSize={"2.7rem"} fontweight={"800"} />
+              <Heading fontSize={"1.5rem"} fontWeight={"400"} content={"Endless entertainment starts at just ₹ 149. Cancel anytime."} />
+              <Heading fontSize={"1.3rem"} fontweight={"400"} content={"Ready to watch? Enter your email to create or restart your membership."} />
             </div>
             <div className='button-input'>
               <Input width={"20rem"} height={"3.8rem"} placeholder={"Email address"} borderRadius={"5px"} backgroundColor={"rgba(0,0,0,0.7"} color={"white"} padding={"1.5rem 1rem 0.5rem"} />
@@ -62,12 +62,12 @@ const LandingPage = () => {
       <MiniCard content={"Watch everywhere"} paragraph={"Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"} />
       <div className='seperater'></div>
       <MiniCard content={"Create profiles for kids"} paragraph={"Send children on adventures with their favourite characters in a space made just for them—free with your membership."} image={"https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"} />
-
+      <div className='seperater'></div>
 
       <div className='last-text-container '>
         <p className='last-text'>Ready to watch? Enter your email to create or restart your membership.</p><br />
         <div className='ending-int'>
-          <Input placeholder={"Email address"} height={"38px"} width={"20%"} backgroundColor={"grey"} padding={"0px 10px 0px 10px"} borderRadius={"8px"}/>
+          <Input placeholder={"Email address"} height={"38px"} width={"20%"} backgroundColor={"grey"} padding={"0px 10px 0px 10px"} borderRadius={"8px"} />
           <Button content={"Get started"} backgroundColor={"rgb(229, 9, 20)"} color={"rgb(255, 255, 255)"} padding="0.75rem 1.5rem" borderRadius={"8px"} fontSize={"15px"} />
         </div>
       </div>

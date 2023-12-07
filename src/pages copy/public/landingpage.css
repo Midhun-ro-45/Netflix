@@ -64,9 +64,11 @@
 
 .last-text-container {
     background-color: black;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+
 }
-.ending-int{
+
+.ending-int {
     display: flex;
     justify-content: center;
     align-items: center;

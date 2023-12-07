@@ -33,7 +33,7 @@ const HomePage = () => {
         return data?.length > n ? data.substring(0, n) + "..." : data;
     };
 
-    console.log(movie);
+    // console.log(movie);
 
     // card functionalities:
 
@@ -59,11 +59,11 @@ const HomePage = () => {
                 />
                 <div className="homepage-content">
 
-                    <h1 style={{ color: "white",marginBottom:"-1rem",marginLeft:"0px" }}>{movie?.name}</h1>
+                    <h1 style={{ color: "white", marginBottom: "-1rem", marginLeft: "0px" }}>{movie?.name}</h1>
 
                     <div className="homepage-buttons">
-                        <Button content={"play"} margin width={"8rem"} height={"3rem"} color={"black"} backgroundColor={"white"} fontWeight={'600'} fontSize={"15px"}/>
-                        <Button color={"white"} content={"watch later"} width={"8rem"} height={"3rem"} backgroundColor={"inherit"} fontSize={"15px"}/>
+                        <Button content={"play"} margin width={"8rem"} height={"3rem"} color={"black"} backgroundColor={"white"} fontWeight={'600'} fontSize={"15px"} />
+                        <Button color={"white"} content={"watch later"} width={"8rem"} height={"3rem"} backgroundColor={"inherit"} fontSize={"15px"} />
                     </div>
 
                     <p style={{ color: "white" }} >

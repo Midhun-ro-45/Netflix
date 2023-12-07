@@ -43,7 +43,7 @@ const SignUpForm = () => {
                     <div className='signup-content'>
                         <Input
                             type="text"
-                            placeholder="Email"
+                            placeholder="user name"
                             value={mailId}
                             onChange={(e) => setMailId(e.target.value)}
                             height={"20%"}
@@ -57,7 +57,7 @@ const SignUpForm = () => {
                             height={"20%"}
                             width={"98%"}
 
-                        /><br/>
+                        /><br />
                         <div className='sign-up-butt'><Link to="/home"> <Button onClick={handleLogin} content={"Sign Up"} height={"3rem"} width={"97%"} borderRadius={"4px"} fontSize={"20px  "} backgroundColor={"rgb(229,9,20)"} color={"white"} ></Button></Link>
                         </div>
                         <div>
@@ -65,7 +65,7 @@ const SignUpForm = () => {
                                 <div><p className='need-link line-height'>Already subscribed to netflix?</p></div><div><Link to="/login" className='colorwhite'>Sign In</Link></div>
                             </div>
 
-                            {/*  */}
+
                         </div>
 
 
